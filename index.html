@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Playground</h1>
+        <p class="subtitle">Interactive Web Magic ✨</p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="card">
+            <h2>Event Handling</h2>
+            
+            <div class="event-box" id="click-box">
+                <p>Click me!</p>
+            </div>
+            
+            <div class="event-box" id="hover-box">
+                <p>Hover over me!</p>
+            </div>
+            
+            <div class="event-box" id="keypress-box">
+                <p>Press any key (focus me first)</p>
+            </div>
+            
+            <div class="event-box" id="secret-box">
+                <p>Double click or long press me for a secret!</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="card">
+            <h2>Interactive Elements</h2>
+            
+            <div class="color-changer">
+                <button id="color-btn">Change My Color</button>
+                <p id="color-text">Watch me change!</p>
+            </div>
+            
+            <div class="gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <img src="https://picsum.photos/id/237/400/300" alt="Gallery image" class="active">
+                    <img src="https://picsum.photos/id/238/400/300" alt="Gallery image">
+                    <img src="https://picsum.photos/id/239/400/300" alt="Gallery image">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <h3>Tab Component</h3>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <p>Content for Tab 1</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <p>Content for Tab 2</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <p>Content for Tab 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="card">
+            <h2>Form Validation</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars)</label>
+                    <input type="password" id="password">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <span class="strength-meter"></span>
+                        <span class="strength-text"></span>
+                    </div>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Playground &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
